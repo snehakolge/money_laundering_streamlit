@@ -427,7 +427,7 @@ with tab3:
             return ""
 
         st.dataframe(
-            log_df.style.applymap(color_risk, subset=["risk"]),
+            log_df.style.map(color_risk, subset=["risk"]),
             use_container_width=True
         )
         st.markdown("---")
